@@ -1,3 +1,7 @@
+banner () {
+    clear
+    echo "${BLUE}BY STARFALL"
+}
 #!/usr/bin/bash
 pathFile="sylfurgames" 
 cd ~/../usr/bin 
