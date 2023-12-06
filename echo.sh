@@ -4,11 +4,12 @@ help_command() {
   echo "Доступные команды:"
   echo "help - показывает список доступных команд"
   echo "author - показывает информацию об авторе"
+  echo "stop - останавливает скрипт"
 }
 # Функция для команды author
 author_command() {
-  echo "Автор: starfall"
-  echo "Контактная информация: @starfal8k"
+  echo "Автор: Ваше_имя"
+  echo "Контактная информация: ваш_email"
 }
 # Главный цикл программы
 while true; do
@@ -22,6 +23,10 @@ while true; do
       ;;
     author)
       author_command
+      ;;
+    stop)
+      echo "Утилита остановлена."
+      exit 0
       ;;
     *)
       echo "Некорректная команда. Введите 'help' для помощи."
