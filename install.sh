@@ -1,3 +1,4 @@
+BLUE="$(printf '\033[34m')"
 banner () {
     clear
     echo "${BLUE}BY STARFALL"
