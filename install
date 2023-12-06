@@ -7,7 +7,7 @@ pathFile="sylfurgames"
 cd ~/../usr/bin 
 # команда
 touch sylfurgames
-echo "cd ~/$pathFile/ && python echo.sh" >  sylfurgames
+echo "cd ~/$pathFile/ && python main.py" >  sylfurgames
 chmod +x sylfurgames
 cd ~/
 echo installsuka
