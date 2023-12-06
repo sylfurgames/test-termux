@@ -1,18 +1,24 @@
+banner () {
+    clear
+    echo "BY - Starfall"
+}
 #!/bin/bash
 # Функция для команды help
 help_command() {
+  echo ""
   echo "Доступные команды:"
   echo "help - показывает список доступных команд"
   echo "author - показывает информацию об авторе"
   echo "stop - останавливает скрипт"
 }
-# Функция для команды author
-author_command() {
-  echo "Автор: Ваше_имя"
-  echo "Контактная информация: ваш_email"
+package_command() {
+echo ""
+echo "link: https://t.me/imst_stich_studio"
 }
 # Главный цикл программы
 while true; do
+  #Пустая строка
+  echo
   # Выводим приглашение для ввода команды
   echo -n "Введите команду (help для помощи): "
   read command
@@ -21,8 +27,7 @@ while true; do
     help)
       help_command
       ;;
-    author)
-      author_command
+      package_command
       ;;
     stop)
       echo "Утилита остановлена."
